@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from "react";
-import BrewButton from "../components/q2/BrewButton";
+import BrewButton from "../../components/q2/BrewButton";
 import Link from 'next/link'
-import ContinueButton from "../components/utils/ContinueButton";
-import ProgressBar from "../components/utils/ProgressBar";
+import ContinueButton from "../../components/utils/ContinueButton";
+import ProgressBar from "../../components/utils/ProgressBar";
 export default function Question2() {
 
   const [active, setActive] = useState("")

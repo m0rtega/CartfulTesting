@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import './sass/main.scss'
-import NavBar from "./components/nav/NavBar";
+import NavBar from "../components/nav/NavBar";
 
 export const metadata: Metadata = {
   title: "Prueba Técnica",

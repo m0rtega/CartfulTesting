@@ -1,4 +1,4 @@
-import ContinueButton from "./components/utils/ContinueButton";
+import ContinueButton from "../components/utils/ContinueButton";
 
 export default function Home() {
 

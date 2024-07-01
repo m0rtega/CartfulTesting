@@ -31,8 +31,8 @@ export default function BestMatch() {
       </div>
       <div className="content">
         <div className="why-love-it">
-          <div className="title">Why you'll love it</div>
-          <div className="line">If you’ve ever taken a bite from a ripe red apple, you’ll know the way this coffee tastes.</div>
+          <div className="title">Why you&apos;ll love it</div>
+          <div className="line">If you&apos;ve ever taken a bite from a ripe red apple, you&apos;ll know the way this coffee tastes.</div>
         </div>
         <div className="attr-container">
           {resultsAttributes}

@@ -1,5 +1,5 @@
-import BestMatch from "../components/results/BestMatch";
-import ProgressBar from "../components/utils/ProgressBar"
+import BestMatch from "../../components/results/BestMatch";
+import ProgressBar from "../../components/utils/ProgressBar"
 
 export default function Results() {
 
