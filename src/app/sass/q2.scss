@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "./commons/_mixins.scss";
+
+.question-two {
+  @include theme;
+  align-items: center;
+  
+  .how-brew {
+    width: 690px;
+    height: 39px;
+    gap: 0px;
+    opacity: 0px;
+    margin-bottom: 49px;
+    margin-top: 64px;
+
+    //styleName: Desktop/h2;
+    font-family: "Roboto Condensed";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .brew-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    .brew-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 164px;
+      padding: 32px 24px 32px 24px;      
+      border: 0;
+      background: linear-gradient(#0000, rgba(255, 255, 255, 1)) top/100% 800%;
+      background-color: rgba(244, 238, 229, 1);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .brew-button:hover {
+      background-position: bottom;
+    }
+
+    .brew-button:nth-child(1) {
+      transform: rotate(-12deg);
+      margin-top: 64px;
+    }
+
+    .brew-button:nth-child(2) {
+      transform: rotate(-8deg);
+      margin-top: 28.4px;
+    }
+
+    .brew-button:nth-child(3) {
+      transform: rotate(-4deg);
+      margin-top: 7.11px;
+    }
+
+    .brew-button:nth-child(5) {
+      transform: rotate(4deg);
+      margin-top: 7.11px;
+    }
+
+    .brew-button:nth-child(6) {
+      transform: rotate(8deg);
+      margin-top: 28.4px;
+    }
+
+    .brew-button:nth-child(7) {
+      transform: rotate(12deg);
+      margin-top: 64px;
+    }
+  }
+}
+
+.q2-footer {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  margin-bottom: 30px;
+
+  .back-button {
+    @include button-text();
+    width: 53px;
+    height: 34px;
+    margin-left: 120px;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: unset;
+    border-bottom: 1.5px solid rgba(34, 34, 34, 1);
+    background: linear-gradient(#0000, rgb(0 0 0/10%)) top/100% 800%;
+    background-color: rgba(244, 238, 229, 1);
+    transition: 0.5s;
+    color: rgba(34, 34, 34, 1);
+    text-decoration: none; /* no underline */
+
+    .arrow {
+      width: 4px;
+      height: 9px;
+      gap: 0px;
+      border: 1.5px 0px 0px 0px;
+      opacity: 0px;
+      margin-right: 8px;
+    }
+  }
+
+  .back-button:hover {
+    background-position: bottom;
+  }
+
+  .why-it-matters {
+    @include button-text();
+    width: 141px;
+    height: 34px;
+    margin-right: 121px;  
+    border: 0;
+    border-bottom: 1.5px solid rgba(34, 34, 34, 1);
+    background: linear-gradient(#0000, rgb(0 0 0/10%)) top/100% 800%;
+    background-color: rgba(244, 238, 229, 1);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .why-it-matters:hover {
+    background-position: bottom;
+  }
+}
+
+@media only screen and (max-width: 1205px){  
+  
+  .question-two {
+    justify-content: center;
+
+    .how-brew {
+      margin-top: 240px;
+    }
+
+    .brew-options {
+      padding-left: 93px;
+      padding-right: 93px;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .brew-button:hover {
+        background-position: bottom;
+      }
+
+      .brew-button:nth-child(1) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(2) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(3) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(5) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(6) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(7) {
+        transform:none;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1205px) and (max-height: 834px) {  
+  
+  .question-two {
+    justify-content: center;
+
+    .brew-options {
+      padding-left: 93px;
+      padding-right: 93px;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .brew-button:hover {
+        background-position: bottom;
+      }
+
+      .brew-button:nth-child(1) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(2) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(3) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(5) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(6) {
+        transform:none;
+        margin-top: 0;
+      }
+  
+      .brew-button:nth-child(7) {
+        transform:none;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px){  
+  .question-two {
+    height: 100%;
+
+    .how-brew {
+      width: unset;
+      margin-bottom: 34px;
+      font-size: 22px;
+    }
+
+    .brew-options {
+      padding: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 40px;
+
+      .brew-button {
+        padding: 0;
+        width: 159px;
+        height: 130px;
+        font-size: 14px;
+
+        img {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+
+    .q2-footer {
+      position: unset;
+      justify-content: space-between;
+
+      .back-button {
+        margin-left: 20px;
+      }
+
+      .why-it-matters {
+        margin-right: 20px;
+      }
+    }
+  }
+}

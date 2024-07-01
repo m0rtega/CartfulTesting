@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './q2.scss';
+@import './barista-transition.scss';
+@import './results.scss';
+@import "./commons/_mixins.scss";
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: rgba(34, 34, 34, 1);
+  height: 165.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nav-title {
+    font-family: "Roboto Condensed";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .nav-menu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 48px;
+    position: absolute;
+    right: 109.5px;
+    
+
+    .menu-line {
+      width: 46px;
+      height: 0px;
+      left: 1330.5px;
+      gap: 0px;
+      border: 3px 0px 0px 0px;
+      opacity: 0px;
+      border: 1.5px solid rgba(255, 255, 255, 1)
+    }
+  }
+}
+
+.continue-button {
+  position: fixed;
+  bottom: 0;
+  padding: 12px 15px 10px 15px;
+  gap: 10px;
+  border-radius: 2.55px 2.55px 2.55px 2.55px;
+  font-family: "Roboto Condensed";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18.2px;
+  letter-spacing: 0.22em;
+  text-align: center;
+  text-decoration: none;
+  color:rgba(255, 255, 255, 1);
+  background: rgba(34, 34, 34, 1);
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+.progress-bar {
+  width: 304px;
+  height: 24px;
+  gap: 32px;
+  opacity: 0px;
+  display: flex;
+  margin-top: 200px;
+
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 22px;
+    border: 2px solid rgba(34, 34, 34, 1);
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 1);
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px;
+    letter-spacing: 0.02em;
+
+
+    &.answered {
+      background: rgba(34, 34, 34, 1);
+      color: rgba(255, 255, 255, 1);
+    }
+
+    &.current {
+      background: rgba(238, 180, 38, 1);
+      border: 2px solid rgba(238, 180, 38, 1);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+@media only screen and (max-width: 1205px){
+
+  .continue-button {
+    margin-bottom: 173px;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    margin-top: 0;
+    top: 200px
+  }
+
+  .navbar {
+    .nav-menu {
+      right: 38px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1205px) and (max-height: 1120px) {  
+  .continue-button {
+    margin-bottom: 56px;
+  }
+
+  .progress-bar {
+    position: absolute;
+    margin-top: 0;
+    top: 180px
+  }
+}
+
+@media only screen and (max-width: 750px){
+
+  .progress-bar {
+    gap: 16px;
+    justify-content: center;
+    
+    .step {
+      width: 22px;
+      border: 1px solid rgba(34, 34, 34, 1);
+    }
+  }
+
+  .navbar {
+    height: 155px;
+    justify-content: space-between;
+    
+    .nav-title {
+      margin-left: 38px;
+      font-size: 24px;
+    }
+
+    .nav-menu {
+      right: 38px;
+
+      .menu-line {
+        width: 32px;
+      }
+    }
+  }
+
+  .continue-button {
+    width: 100vw;
+    height: 57px;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // .progress-bar {
+  //   position: absolute;
+  //   margin-top: 0;
+  //   top: 200px
+  // }
+}

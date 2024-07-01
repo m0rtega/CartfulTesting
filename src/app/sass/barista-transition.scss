@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "./commons/_mixins.scss";
+
+.barista {
+  @include theme($theme: rgba(156, 175, 150, 1));
+  align-items: center;
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    padding: 2px 14.86px 15.09px 14.86px;
+    gap: 0px;
+    opacity: 0px;    
+    margin-top: 394px;
+  }
+
+  .text {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1205px){
+  
+  .barista {
+    justify-content: center;
+
+    .icon {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .barista {
+    padding-top: 55px;
+
+    .icon {
+      padding-bottom: 0;
+    }
+
+    .text {
+      font-size: 16px;
+      padding: 0 110px 0 110px;
+      line-height: unset;
+    }
+  }
+}
