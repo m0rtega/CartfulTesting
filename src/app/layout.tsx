@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: "",
 };
 
+// Creamos el layout principal de la aplicación. Agregamos el Navbar.
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -14,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body>        
         <NavBar />
         {children}
       </body>

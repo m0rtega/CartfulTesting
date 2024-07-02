@@ -1,7 +1,10 @@
 import React from "react";
+import Attribute from "./Attribute";
 
 export default function BestMatch() {
 
+  // Un array para los cuatro atributos que se describen en el Best Match,
+  // así podemos iterar sus elementos dinámicamente y solo necesitamos editar un elemeno en vez de cuatro.
   const resultsAttributesArray = [
     {title: "Tasting Notes", icon: "1.svg", desc: "Red Apple, Lemongrass, Malt Chocolate"},
     {title: "Roast Level", icon: "4.svg", desc: "Medium"},
@@ -9,15 +12,16 @@ export default function BestMatch() {
     {title: "Brew Methods", icon: "3.svg", desc: "Brews a delicious cup with a pour over"},
   ]
 
+  // Decidí no hacerlo un componente distinto solo porque es bastante simple.
+  // Aquí iteramos sobre el array de atributos y creamos un elemento por cada uno
   const resultsAttributes = resultsAttributesArray.map((element, index) => {
     return (
-      <div key={index} className="attr">
-        <div className="title">{element.title}</div>
-        <div className="content">
-          <div className="icon"><img src={`/results/${element.icon}`} alt={`${element.title} icon`} /></div>
-          <div className="desc">{element.desc}</div>
-        </div>
-      </div>
+      <Attribute 
+        key={index}
+        title={element.title}
+        icon={element.icon}
+        desc={element.desc}
+      />
     )
   })
 

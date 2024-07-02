@@ -10,6 +10,7 @@ interface Props {
   active: string;
 }
 
+// El componente para mostrar un botón en la pregunta 2.
 export default function BrewButton({icon, text, bgcolor, onclick, active}: Props) {  
 
   const greyed = active.localeCompare("") != 0 && active.localeCompare(text) != 0;

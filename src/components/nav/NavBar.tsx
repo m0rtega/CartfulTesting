@@ -1,6 +1,7 @@
 import React from "react";
 import NavMenu from "./NavMenu";
 
+// El navbar.
 export default function NavBar() {
   
   return (

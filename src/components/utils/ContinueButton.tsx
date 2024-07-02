@@ -5,6 +5,7 @@ interface Props {
   href: string;
 }
 
+// El botón de continuar que se usa en la primera y segunda pantalla.
 export default function ContinueButton({href} : Props) {
 
   return (

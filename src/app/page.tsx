@@ -1,5 +1,6 @@
 import ContinueButton from "../components/utils/ContinueButton";
 
+// La primera página de nuestra simple app. No hay mucho que ver.
 export default function Home() {
 
   return (

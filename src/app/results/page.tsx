@@ -3,6 +3,8 @@ import ProgressBar from "../../components/utils/ProgressBar"
 
 export default function Results() {
 
+  // No hay mucho que ver. Usamos el componente de ProgressBar con el current 7 porque llegamos al final del quiz.
+  // Importamos y usamos el componente de BestMatch.
   return (
     <main className="results">
         <ProgressBar current={7} />

@@ -7,8 +7,10 @@ import ContinueButton from "../../components/utils/ContinueButton";
 import ProgressBar from "../../components/utils/ProgressBar";
 export default function Question2() {
 
+  // El estado que nos dirá cuál boton está activo.
   const [active, setActive] = useState("")
 
+  // Un array para todos los botones de la pregunta 2.
   const brewButtons = [
     {icon: "coffee-maker-desktop.svg", text: "Coffee Maker", bgcolor: "rgba(238, 180, 38, 1)"},
     {icon: "french-press-desktop.svg", text: "French Press", bgcolor: "rgba(156, 175, 150, 1)"},
@@ -19,6 +21,7 @@ export default function Question2() {
     {icon: "moka-pot-desktop.svg", text: "Moka Pot", bgcolor: "rgba(210, 198, 195, 1)"},
   ]
 
+  // Función para poder togglear el botón activo o settear uno nuevo.
   const toggleButton = (text : string) => {
     if (active.localeCompare(text) === 0) {
       setActive("")
@@ -27,6 +30,7 @@ export default function Question2() {
     }
   }
 
+  // Mapeamos los botones de la pregunta 2.
   const brewButtonsMapped = brewButtons.map((element, index) => {    
     return (
       <BrewButton 
@@ -53,6 +57,7 @@ export default function Question2() {
         <Link className="back-button" href="/"><img className="arrow" src="/q2/left-arrow.png" /><span>Back</span></Link>
         <button className="why-it-matters">Why it matters   +</button>
       </div>
+      {/* Si un botón fue seleccionado, mostramos el botón de continuar. */}
       {active.localeCompare("") !== 0 ? <ContinueButton href="/results" /> : null}
     </main>
   );

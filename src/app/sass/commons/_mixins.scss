@@ -1,3 +1,5 @@
+// Mixins más que nada para el tema de las diferentes pantallas.
+
 @mixin theme($theme: rgba(244, 238, 229, 1)) {
   background: $theme;
   color: rgba(34, 34, 34, 1);
